@@ -12,6 +12,7 @@ header{
     background-color: #f8f9fa;
     position: fixed;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     nav{
         width: 90%;
         height: 100%;
@@ -38,9 +39,31 @@ header{
 
             }
         }
+        .bigMenu{
+            width: 100%;
+            height: calc(100vh - 177px);
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(4, 56, 0, 0.741);
+            color: rgb(255, 255, 255);
+            position: fixed;
+            top: 177px;
+            left: 0;
+            /* transition: all 0.5s ease-in-out; */
+            /* transform: ; */
+            a{
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                padding: 10px;
+                text-decoration: none;
+            }
+        }
         select{
-            /* padding: 1px 15px; */
+            padding: 1px 15px;
             border: none;
+            width: 90px;
             border-radius: 5px;
             background-color: #f8f9fa;
             color: #000;
@@ -48,17 +71,24 @@ header{
             font-weight: 500;
             cursor: pointer;
             option{
-                background-color: #f8f9fa;
+                background-color: green;
                 color: #000;
                 font-size: 16px;
                 font-weight: 500;
+                
                 
             }
         }
         
     }
+    .search{
+        color:rgb(4, 56, 0) ;
+    }
 
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
-
+.active{
+    background-color: rgb(4, 56, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 5px;
 }

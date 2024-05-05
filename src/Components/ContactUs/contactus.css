@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.contactus{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 300px;
+            font-size: 50px;
+            font-weight: 700;
+            color: #014209;
+        }
+    }
+    
+    .info{
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            color: #014209;
+        }
+        .mail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            p{
+                font-size: 32px;
+                font-weight: 500;
+                color: #e6b16b ;
+               
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        color: #014209;
+                    }
+                
+                
+            }
+            a{
+                text-decoration: none;
+                
+            }
+        }
+        .tel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            p{
+                font-size: 32px;
+                font-weight: 500;
+                color: #e6b16b ;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+
+                
+            }
+            a{
+                text-decoration: none;
+                
+            }
+        }
+    
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        svg{
+            font-size: 90px;
+            background-color: #014209;
+            color: #e6b16b ;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                background-color: #e6b16b;
+                color: #014209;
+            }
+        }
+        p{
+            font-size: 32px;
+            font-weight: 500;
+            color: #e6b16b ;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: #014209;
+            }
+          
+        }
+        a{
+            text-decoration: none;
+            color: #e6b16b ;
+
+        }
+    }
+}
