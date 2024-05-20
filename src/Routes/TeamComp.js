@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from '../Components/Navbar/NavBar'
+import Team from '../Components/Team/Team'
+import Footer from '../Components/footer/Footer'
 
 const TeamComp = () => {
   return (
     <div>
-      <h1>TeamComp</h1>
+      <Navbar/>
+      <Team/>
+      <Footer/>
     </div>
   )
 }
