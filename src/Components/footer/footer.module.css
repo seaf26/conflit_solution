@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Bigfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #567a61;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #e6b16b;
+    padding: 20px;
+    margin-top: 50px;
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            color: #e6b16b;
+        
+        }
+    }
+    .bigcontent{
+        display: flex;
+        align-items: center;
+    }
+    .info{
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            color: #114323;
+        }
+        .mail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                color: #e6b16b ;               
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                   color: #014209;
+                    }
+                
+                
+            }
+            a{
+                text-decoration: none;
+            }
+            .icon{
+                font-size: 40px;
+                color: #e6b16b;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+            }
+        }
+        .tel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size:20px;
+            p{
+                font-weight: 500;
+                color: #e6b16b ;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+            .icon{
+                font-size: 40px;
+                color: #e6b16b;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+            }
+        }
+    
+    }
+    .icons{
+        display: flex!important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+      
+        svg{
+            font-size: 40px;
+            background-color: #014209;
+            color: #e6b16b ;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            object-fit: cover;
+            &:hover{
+                background-color: #e6b16b;
+                color: #014209;
+            }
+        }
+        p{
+            font-weight: 500;
+            color: #e6b16b ;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: #014209;
+            } 
+        }
+        a{
+            text-decoration: none;
+            color: #e6b16b ;
+        }
+    }
+}
+
+@media screen and (max-width: 963px) {
+    .Bigfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        .bigcontent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .mail{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                p{
+                    font-weight: 500;
+                    color: #e6b16b ;               
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                    color: #014209;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+            .tel{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                p{
+                    font-weight: 500;
+                    color: #e6b16b ;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        color: #014209;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        
+        }
+        .icons{
+            display: flex!important;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            svg{
+                font-size: 50px;
+                background-color: #014209;
+                color: #e6b16b ;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                object-fit: cover;
+                &:hover{
+                    background-color: #e6b16b;
+                    color: #014209;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                color: #e6b16b ;
+                transition: all 0
+    
+}
+            a{
+                text-decoration: none;
+                color: #e6b16b ;
+            }
+        }
+    }
+    .logoo{
+        display: none;
+    }
+}
+@media screen and (max-width:451px) {
+    .Bigfooter{
+        .icons{
+            display: flex!important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            svg{
+                font-size: 50px;
+                background-color: #014209;
+                color: #e6b16b ;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                object-fit: cover;
+                &:hover{
+                    background-color: #e6b16b;
+                    color: #014209;
+                }
+            }
+            p{
+                font-weight: 500;
+                color: #e6b16b ;
+                transition: all 0
+    
+    }
+            a{
+                text-decoration: none;
+                color: #e6b16b ;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 370px){
+    .Bigfooter{
+        .logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 90px;
+                object-fit: contain;
+
+            }
+        }
+    }
+}

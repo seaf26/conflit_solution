@@ -21,10 +21,10 @@
             justify-content: center;
             align-items: center;
             margin: auto;
-            margin-top: 300px;
+            margin-top: 50px;
             font-size: 50px;
             font-weight: 700;
-            color: #014209;
+            color: #114323;
         }
     }
     
@@ -33,11 +33,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
         h1{
             font-size: 40px;
             font-weight: 700;
-            color: #014209;
+            color: #114323;
         }
         .mail{
             display: flex;
@@ -61,6 +60,14 @@
                 text-decoration: none;
                 
             }
+             .icon{
+                font-size: 70px;
+                color: #e6b16b;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+            }
         }
         .tel{
             display: flex;
@@ -76,18 +83,25 @@
                 &:hover{
                     color: #014209;
                 }
-
-                
             }
             a{
                 text-decoration: none;
                 
             }
+            .icon{
+                font-size: 70px;
+                color: #e6b16b;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+            }
         }
     
     }
     .icons{
-        display: flex;
+        display: flex!important;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -121,4 +135,56 @@
 
         }
     }
+}
+
+@media screen and (max-width: 700px){
+    .contactus{
+        .info{
+            flex-direction: column;
+
+        }
+        .icons{
+            flex-direction: column;
+       }
+    }   
+}
+
+@media screen and (max-width: 374px){
+    .contactus{
+        .title{
+            h1{
+                font-size: 30px;
+            }
+        }
+        .info{
+            h1{
+                font-size: 30px;
+            }
+            .mail{
+                p{
+                    font-size: 30px;
+                }
+                .icon{
+                    font-size: 70px;
+                }
+            }
+            .tel{
+                p{
+                    font-size: 30px;
+                }
+                .icon{
+                    font-size: 70px;
+                }
+            }
+        }
+        .icons{
+            svg{
+                font-size: 70px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+    
 }

@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100%;  */
+    .header {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #114323;
+        margin-bottom: 7vh;
+        
+    }
+  .miniContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    .image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        max-width: 900px;
+        
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        }
+    }
+  }
+}

@@ -1,9 +1,14 @@
 import React from 'react'
+import NavBar from '../Components/Navbar/NavBar'
+import PersonServices from '../Components/PersonServices/PersonServices'
+import Footer from '../Components/footer/Footer'
 
 const PeopleComp = () => {
   return (
     <div>
-      <h1>PeopleComp</h1>
+      <NavBar/>
+      <PersonServices/>
+      <Footer/>
     </div>
   )
 }

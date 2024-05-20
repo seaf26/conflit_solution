@@ -1,10 +1,11 @@
 import React from 'react'
+import Footer from '../Components/footer/Footer'
 
 const LibarayComp = () => {
   return (
     <div>
+      <Footer />
       
-      <h1>LibarayComp</h1>
     </div>
   )
 }

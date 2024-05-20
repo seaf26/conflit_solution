@@ -3,23 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
+.head{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px ;
+    height: 176px;
     background-color: #f8f9fa;
     position: fixed;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    nav{
-        width: 90%;
+    top: 0;
+    font-weight: bold;
+    svg{
+        cursor: pointer;
+    }
+    .navv{
+        width: 94%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: white;
+        
+        
         ul{
             display: flex;
             justify-content: center;
@@ -29,11 +36,10 @@ header{
             li a{
                 text-decoration: none;
                 padding: 7px;
-                /* gap: 0px; */
                 display: flex;
                 align-items: center;
                 width: max-content;
-                color: rgb(4, 56, 0);
+                color: #114323;
                 font-size: 19px;
                 
 
@@ -41,54 +47,53 @@ header{
         }
         .bigMenu{
             width: 100%;
-            height: calc(100vh - 177px);
+            height: calc(100vh - 176px);
             display: flex !important;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgba(4, 56, 0, 0.741);
+            background-color:#114323;
             color: rgb(255, 255, 255);
             position: fixed;
             top: 177px;
             left: 0;
-            /* transition: all 0.5s ease-in-out; */
-            /* transform: ; */
+
             a{
                 color: rgb(255, 255, 255);
                 font-size: 20px;
-                padding: 10px;
+                padding: 9px;
                 text-decoration: none;
-            }
-        }
-        select{
-            padding: 1px 15px;
-            border: none;
-            width: 90px;
-            border-radius: 5px;
-            background-color: #f8f9fa;
-            color: #000;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            option{
-                background-color: green;
-                color: #000;
-                font-size: 16px;
-                font-weight: 500;
-                
                 
             }
         }
+
         
     }
     .search{
-        color:rgb(4, 56, 0) ;
+        color:#114323 ;
     }
 
 }
+
+.menu{
+    display: none;
+}
 .active{
-    background-color: rgb(4, 56, 0);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    border-radius: 5px;
+    background-color:#e6b16b !important;
+    color: rgb(255, 255, 255) !important;
+    padding: 15px !important;
+    border-radius: 5px !important;
+}
+
+@media screen and (max-width: 1510px){
+    .head{
+        .navv{
+            ul{
+                display: none;
+            }
+        }
+    }
+    .menu{
+        display: block;
+    }
 }

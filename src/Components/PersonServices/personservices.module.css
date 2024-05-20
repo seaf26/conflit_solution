@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Service_companySenior{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: #114323;
+    width: 100%;
+    h1{
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    .Service_companyJunior{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 80%;  
+      margin-top: 50px;
+      gap: 40px;
+    .content{
+      width: 340px;
+      min-width: 300px;
+      max-width: 600px;
+      height: 240px;
+      background-color: #114323 ;
+      border: 1px solid #114323;
+      border-radius: 20px;
+      box-shadow: 10px 10px 10px -5px #114323;  
+      .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 280px;
+        margin: auto;
+        gap: 10px;
+        padding: 0 10px;
+        padding-top: 1vh;
+        .icon{
+          font-size: 40px;
+          color: #e6b16b;
+        }
+        p{
+          display: flex;
+          font-size: 22px;
+          font-weight: bolder;
+          color: #e6b16b;
+          
+        }
+        
+      }
+      .Paragraph{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        p{
+          font-size: 17px;
+          /* font-weight: ; */
+          margin-top: 1vh;
+          color: #e6b16b;
+          padding: 0 10px;
+        }
+      }
+    }
+    }
+  }

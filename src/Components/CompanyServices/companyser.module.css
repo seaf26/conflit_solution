@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Service_companySenior{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: #114323;
+    width: 100%;
+    h1{
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    .Service_companyJunior{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 80%;  
+      margin-top: 50px;
+      gap: 40px;
+    .content{
+      width: 320px;
+      min-width: 300px;
+      max-width: 600px;
+      height: 160px;
+      border: 1px solid #114323;
+      border-radius: 20px;
+      box-shadow: 10px 10px 10px -5px #114323;  
+      .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 10px;
+        .icon{
+          font-size: 40px;
+          color: #114323;
+        }
+        p{
+          display: flex;
+          font-size: 22px;
+          font-weight: bolder;
+          color: #e6b16b;
+          
+        }
+        
+      }
+      .Paragraph{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        p{
+          font-size: 17px;
+          font-weight: bold;
+          margin-top: 1vh;
+          color: #114323;
+          padding: 0 10px;
+        }
+      }
+      .bttn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100px;
+        height: 40px;
+        button{
+    
+          border: none;
+          border-radius: 10px;
+          background-color: #114323;
+          color: white;
+          font-size: 17px;
+          font-weight: bold;
+          cursor: pointer;
+        } 
+        }
+    }
+    }
+  }
