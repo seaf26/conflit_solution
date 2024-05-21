@@ -6,9 +6,6 @@
 }
 body{
     margin-top: 176px;
-
-   
-
 }
 
 
@@ -40,6 +37,7 @@ body{
       font-weight: bold;
       max-width: 600px;
     }
+
 
   }
 
@@ -93,7 +91,8 @@ body{
       width: 100%;  
       margin-top: 50px;
       gap: 40px;
-    .content{
+      .content{
+      position: relative;
       
       width: 80%;
       width: 320px;
@@ -134,23 +133,27 @@ body{
         }
       }
       .bttn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 100px;
-        height: 40px;
-        button{
-    
-          border: none;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        a{
+          font-size: 14px;
+          text-decoration: none;
+          background-color: #e6b16b;
+          padding: 5px 6px;
           border-radius: 10px;
-          background-color: #114323;
-          color: white;
-          font-size: 17px;
-          font-weight: bold;
-          cursor: pointer;
-        } 
+          border: none;
+          color:#114323;
+          transition: 0.5s ease all;
+          &:hover{
+            background-color: #114323;
+            color: #e6b16b;
+          }
         }
+
+
+      }
     }
     }
   }
+  

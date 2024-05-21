@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import styles from "./navbar.module.css";
+import './navbar.css';
 import { NavLink } from "react-router-dom";
 // import { CiSearch } from "react-icons/ci";
 import logo from '../Imgaes/Screenshot_2024-05-05_013301-removebg-preview.png'
@@ -14,11 +14,10 @@ const NavBar = () => {
 
   return (
     <Fragment>
-      <header className={styles.head}>
-        <nav className={styles.navv}> 
+      <header>
+        <nav > 
             <img src={logo} alt="logo" />
-            
-          <ul className={bigMenu?styles.bigMenu:undefined}>
+          <ul className={bigMenu?"bigMenu":undefined}>
   
 
             <li>
@@ -56,7 +55,7 @@ const NavBar = () => {
           bigMenu ? (
             <AiOutlineClose onClick={menuChange} size={30} />
           ) : (
-            <IoMenu onClick={menuChange} className={styles.menu} size={30} />
+            <IoMenu onClick={menuChange} className="menu" size={30} />
           )
         ) }
         {/* <CiSearch className="search" size={30} /> */}

@@ -30,7 +30,8 @@ const Home = () => {
         title: " تسجيل العلامة التجارية",
         icon: <BiNotepad className={styles.icon} />,
         Paragraph: " اجراءات تسجيل وحماية العلامة التجارية",
-        button: "اقرأ المزيد",
+        button:<Link className="link" to="/services">اقرا المزيد</Link>
+
       },
     ]);
 
@@ -70,9 +71,15 @@ const Home = () => {
                 <div className={styles.Paragraph}>
                   <p>{item.Paragraph}</p>
                 </div>
-                <button className={styles.bttn}>
-                  <Link to="/services">{item.button}</Link>
-                </button>
+                {
+                  item.button &&(
+                    <div className={styles.bttn}>
+                      <Link to={"services"}>{item.button} </Link>  
+                    </div>
+                  
+                  )
+                }
+
               </div>
             );
           })}

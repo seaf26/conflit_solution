@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.head{
+header{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -18,15 +18,13 @@
     svg{
         cursor: pointer;
     }
-    .navv{
+    nav{
         width: 94%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: white;
-        
-        
         ul{
             display: flex;
             justify-content: center;
@@ -78,7 +76,7 @@
 .menu{
     display: none;
 }
-.active{
+ .active{
     background-color:#e6b16b !important;
     color: rgb(255, 255, 255) !important;
     padding: 15px !important;
@@ -86,8 +84,8 @@
 }
 
 @media screen and (max-width: 1510px){
-    .head{
-        .navv{
+    header{
+        nav{
             ul{
                 display: none;
             }
