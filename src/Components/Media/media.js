@@ -24,7 +24,6 @@ const media = () => {
                 <img  src={Mediab} alt="media" id={styles.special}  />
             </div>
         </div>
-      
         </div>
     </Fragment>
   )
