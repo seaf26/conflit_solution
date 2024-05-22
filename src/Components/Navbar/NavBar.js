@@ -47,7 +47,7 @@ const NavBar = () => {
               <NavLink to="/mediaCentre">المركز الاعلامي</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">اتصل </NavLink>
+              <NavLink to="/contact">اتصل بنا</NavLink>
             </li>
           </ul>
         </nav>
