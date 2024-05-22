@@ -13,7 +13,9 @@
     font-weight: 700;
     gap: 10vh;
     width: 100%;
+    overflow-y:hidden ;
     .who_are_we{
+        cursor: pointer;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -35,6 +37,7 @@
         
     }
     .vision{
+        cursor: pointer;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -54,14 +57,16 @@
         }
     }
     .princable{
+        cursor: pointer;
         width: 80%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        
         .title{
+            cursor: pointer;
             .h1{
                 font-size: 2.5rem;
                 font-weight: 700;
@@ -70,6 +75,7 @@
             }
         }
         .values{
+            cursor: pointer;
             gap: 10px;
             display: flex;
             align-items: center;
@@ -87,11 +93,12 @@
                 margin-left: 1rem;
             }
         }
-
+        
         
     }
     .goals{
         display: flex;
+        cursor: pointer;
         flex-wrap: wrap;
         flex-direction: column;
         width: 80%;
@@ -122,13 +129,17 @@
                 flex-direction: column;
                 width: 300px;
                 height: 200px;
+                color: #114323; 
+                transition: 0.5s ease all;
+                &:hover{
+                    background-color: #114323;
+                    color: #e6b16b;
+                }
                 .h2{
-                    color: #114323;
                     font-size: 2rem;
                     font-weight: 700;
                 }
                 .p{
-                    color: #114323;
                     font-size: 1.1rem;
                     width: 90%;
                     text-align: center;

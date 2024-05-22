@@ -23,14 +23,22 @@
       width: 80%;  
       margin-top: 50px;
       gap: 40px;
+      .lastDiv{
+        display: none;
+      }
     .content{
-      width: 320px;
+      width: 370px;
+      height: 210px;
       min-width: 300px;
       max-width: 600px;
-      height: 160px;
       border: 1px solid #114323;
       border-radius: 20px;
       box-shadow: 10px 10px 10px -5px #114323;  
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover{
+        scale: 1.1;
+      }
       .title{
         display: flex;
         align-items: center;
@@ -52,7 +60,7 @@
       }
       .Paragraph{
         display: flex;
-        align-items: center;
+        text-align: center;
         justify-content: center;
         margin: auto;
         p{
@@ -81,6 +89,10 @@
           cursor: pointer;
         } 
         }
+    }
+    .content:last-child {
+      width: 500px;
+      
     }
     }
   }

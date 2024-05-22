@@ -1,11 +1,12 @@
 import React from 'react'
-import Footer from '../Components/footer/Footer'
+import Loading from '../Components/Loading/Loading'
+import NavBar from '../Components/Navbar/NavBar'
 
 const LibarayComp = () => {
   return (
     <div>
-      <Footer />
-      
+      <NavBar />
+      <Loading />
     </div>
   )
 }

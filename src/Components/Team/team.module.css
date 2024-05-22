@@ -11,6 +11,7 @@
   align-items: center;
   width: 100%;
   .mainHeader {
+    cursor: pointer;
     font-weight: 700;
     margin: 2rem 0;
     display: flex;
@@ -30,6 +31,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
     gap: 5px;
     p {
       font-size: 30px;
@@ -46,6 +48,7 @@
     }
   }
   .team {
+    cursor: pointer;
     margin-top: 110px;
     display: flex;
     align-items: center;

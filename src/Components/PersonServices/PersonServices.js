@@ -65,9 +65,9 @@ const PersonServices = () => {
   return (
     <Fragment>
                     <div className={styles.Service_companySenior}>
-            <h1>خدمات الشركات</h1>
-        <div className={styles.Service_companyJunior}>
-        
+            <h1 data-aos="fade-down">خدمات الافراد</h1>
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="700" className={styles.Service_companyJunior}>
           {Servivce_content.map((item, index) => {
             return (
               <div key={index} className={styles.content}>

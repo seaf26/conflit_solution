@@ -55,7 +55,7 @@ const NavBar = () => {
           bigMenu ? (
             <AiOutlineClose onClick={menuChange} size={30} />
           ) : (
-            <IoMenu onClick={menuChange} className="menu" size={30} />
+            <IoMenu onClick={menuChange} className="menu" size={48} />
           )
         ) }
         {/* <CiSearch className="search" size={30} /> */}

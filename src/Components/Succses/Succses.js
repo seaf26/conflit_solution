@@ -14,11 +14,11 @@ const Succses = () => {
   return (
     <Fragment>
         <div className={styles.container}>
-            <div className={styles.header}>
+            <div data-aos="fade-left" className={styles.header}>
                 <h1>شركاء النجاح</h1>
                 </div>
             <div className={styles.miniContainer}>
-                <div className={styles.image}>
+                <div data-aos="fade-right" className={styles.image}>
                     <img src={imageA} alt="imageA" />
                     <img src={imageB} alt="imageB" />
                     <img src={imageC} alt="imageC" />

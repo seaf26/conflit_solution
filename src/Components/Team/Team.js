@@ -7,12 +7,12 @@ const Team = () => {
   return (
     <Fragment>
         <div className={styles.main}>
-        <div className={styles.mainHeader}>
+        <div data-aos="fade-down" className={styles.mainHeader}>
             <p> فريق العمل </p>
             <p>  نعتز بفريق مهني يعد من اهم هناصر النجاح لدي حلول النزاع</p>
         </div>
 
-        <div className={styles.ceo}>
+        <div data-aos="fade-right" className={styles.ceo}>
             <div className={styles.ceoImage}>
                 <img src={man} alt="ceo" />
             </div>
@@ -21,7 +21,7 @@ const Team = () => {
                 <p id={styles.special}>  الرئيس التنفيذي </p>
             </div>
         </div>
-        <div className={styles.team}>
+        <div data-aos="fade-left" className={styles.team}>
             <div className={styles.teamMember}>
                 <div className={styles.teamMemberImage}>
                 <img src={woman} alt="team" />

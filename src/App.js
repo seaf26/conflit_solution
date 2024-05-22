@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomeComp from './Routes/HomeComp'
 import CallComp from './Routes/CallComp'
@@ -9,12 +9,28 @@ import WhoComp from './Routes/WhoComp'
 import LibarayComp from './Routes/LibarayComp'
 import PeopleComp from './Routes/PeopleComp'
 import MediaComp from './Routes/MediaComp'
+import Loading from './Components/Loading/Loading'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const App = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setLoading(false)
+  },[])
+  AOS.init({
+    duration : 700,
+    once: true
+
+  });
+
+
   return (
     <Fragment>
-      <Routes>
+      {
+        loading ? <Loading /> :
+        <Routes>
         <Route path="/" element={<HomeComp />} />
         <Route path="/home" element={<HomeComp />} />
         <Route path="/contact" element={<CallComp />} />
@@ -26,6 +42,9 @@ const App = () => {
         <Route path="/people" element={<PeopleComp />} />
         <Route path="/mediaCentre" element={<MediaComp />} />
       </Routes>
+      }
+      
+
       
     </Fragment>
   )

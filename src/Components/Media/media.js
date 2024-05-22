@@ -10,18 +10,18 @@ const media = () => {
     <Fragment>
         <div className={styles.main}>
             
-        <div className={styles.mediaHeader}>
+        <div data-aos="fade-right" className={styles.mediaHeader}>
             <h1> المركز الاعلامي</h1>
         </div>
-        <div className={styles.media}>
+        <div data-aos="fade-left" className={styles.media}>
             <div className={styles.mediaImage}>
                 <img src={Mediaa} alt="media" />
             </div>
             <div className={styles.mediaImage}>
                 <img src={Mediac} alt="media" />
             </div>
-            <div className={styles.mediaImage}>
-                <img src={Mediab} alt="media" id={styles.special}  />
+            <div   className={styles.mediaImage}>
+                <img  src={Mediab} alt="media" id={styles.special}  />
             </div>
         </div>
       

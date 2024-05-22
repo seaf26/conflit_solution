@@ -47,19 +47,19 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={styles.media}></div>
+      <div  className={styles.media}></div>
       <Media />
-      <div className={styles.num}>
+      <div  className={styles.num}>
         <div className={styles.numbers}>
-          <ImHammer2 />
-          <p>+600</p>
+          <ImHammer2 data-aos="fade-left"/>
+          <p data-aos="fade-right"> +600</p>
         </div>
-        <p id={styles.case}>قضية</p>
+        <p data-aos="fade-left" id={styles.case}>قضية</p>
       </div>
 
       <div className={styles.Service_companySenior}>
-            <h1>خدمات الشركات</h1>
-        <div className={styles.Service_companyJunior}>
+            <h1 data-aos="fade-up">خدمات الشركات</h1>
+        <div data-aos="fade-left"   data-aos-duration="700" className={styles.Service_companyJunior}>
         
           {Servivce_content.map((item, index) => {
             return (

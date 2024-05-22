@@ -93,14 +93,18 @@ body{
       gap: 40px;
       .content{
       position: relative;
-      
       width: 80%;
-      width: 320px;
+      width: 370px;
+      height: 200px;
       min-width: 300px;
-      height: 160px;
       border: 1px solid #114323;
       border-radius: 20px;
-      box-shadow: 10px 10px 10px -5px #114323;  
+      box-shadow: 10px 10px 10px -5px #114323; 
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover{
+        scale: 1.1;
+      } 
       .title{
         display: flex;
         align-items: center;
@@ -154,6 +158,66 @@ body{
 
       }
     }
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .welcomeHome{
+      .content{
+        top: 35%;
+        h1{
+          font-size: 50px;
+        }
+        p{
+          font-size: 30px;
+          max-width: 550px; 
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 584px){
+    .welcomeHome{
+      .content{
+        top: 35%;
+        h1{
+          font-size: 50px;
+        }
+        p{
+          font-size: 30px;
+          max-width: 400px; 
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 483px){
+    .welcomeHome{
+      .content{
+        top: 35%;
+        h1{
+          font-size: 45px;
+        }
+        p{
+          font-size: 28px;
+          max-width: 400px; 
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 415px){
+    .welcomeHome{
+      .content{
+        top: 35%;
+        h1{
+          font-size: 40px;
+        }
+        p{
+          font-size: 25px;
+          max-width: 400px; 
+        }
+      }
     }
   }
   

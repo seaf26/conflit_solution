@@ -14,9 +14,9 @@ const Who = () => {
   return (
     <Fragment>
       <div className={styles.Bigwho}>
-        <div className={styles.who_are_we}>
-          <h1 className={styles.h1}>من نحن</h1>
-          <p className={styles.p}>
+        <div  className={styles.who_are_we}>
+          <h1 data-aos="fade-right" className={styles.h1}>من نحن</h1>
+          <p data-aos="fade-left" className={styles.p}>
             شركة حلول النزاع للمحاماة والاستشارات القانونية - كيان مهني مرخص -
             443574 - تتعامل بشكل فهاي وفعال مع عدد من الجهات العدلية والقضائية
             والقانونية المحلية والدولية. وتضم حلول النزاع فريق قانوني من
@@ -25,17 +25,17 @@ const Who = () => {
           </p>
         </div>
         <div className={styles.vision}>
-          <h1 className={styles.h1}>الرؤية</h1>
-          <p className={styles.p}>
+          <h1 data-aos="fade-right" className={styles.h1}>الرؤية</h1>
+          <p data-aos="fade-left" className={styles.p}>
             نطمح ان نكون شركة قانونية رائدة عالميا في تقديم خدمات المحاماة
             والاستشارات القانونية بأعلي مستوي من الجودة والمهنية.
           </p>
         </div>
         <div className={styles.princable}>
           <div className={styles.title}>
-            <h1 className={styles.h1}>قيمنا </h1>
+            <h1 data-aos="fade-right" className={styles.h1}>قيمنا </h1>
           </div>
-          <div className={styles.values}>
+          <div data-aos="fade-up-left" className={styles.values}>
             <p className={styles.p}>
               <AiFillGolden className={styles.icon} />
               التفاني
@@ -62,7 +62,7 @@ const Who = () => {
             </p>
           </div>
         </div>
-        <div className={styles.goals}>
+        <div data-aos="fade-right" className={styles.goals}>
           <h1 className={styles.h1}>الأهداف</h1>
           <div className={styles.goal}>
             <div className={styles.div}>
