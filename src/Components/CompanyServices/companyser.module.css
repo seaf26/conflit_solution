@@ -96,3 +96,17 @@
     }
     }
   }
+
+  @media screen and (max-width: 1488px) {
+    .Service_companySenior{
+      .Service_companyJunior{
+   
+        .content:last-child {
+          width: 370px;
+          height: 210px;
+          
+        }
+      }
+    }
+    
+  }

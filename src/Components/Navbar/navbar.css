@@ -15,9 +15,11 @@ header{
     z-index: 1000;
     top: 0;
     font-weight: bold;
+    transition: all 0.3s ;
     svg{
         cursor: pointer;
     }
+    
     nav{
         width: 94%;
         height: 100%;
@@ -82,7 +84,15 @@ header{
     padding: 15px !important;
     border-radius: 5px !important;
 }
-
+.navbar {
+    position: fixed;
+  
+    transition: top 0.5s;
+  }
+  
+  .navbar.hide {
+    top: -176px; 
+  }
 @media screen and (max-width: 1510px){
     header{
         nav{

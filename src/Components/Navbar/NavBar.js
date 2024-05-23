@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import './navbar.css';
 import { NavLink } from "react-router-dom";
 // import { CiSearch } from "react-icons/ci";
@@ -8,20 +8,40 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const NavBar = () => {
   const [bigMenu, setBigMenu] = useState(false);
+  const [hideNav, setHideNav] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > window.innerHeight) {
+        setHideNav(currentScrollY > lastScrollTop);
+      } else {
+        setHideNav(false);
+      }      setLastScrollTop(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollTop]);
+
+
   const menuChange = () => {
     setBigMenu(!bigMenu);
   };
 
   return (
     <Fragment>
-      <header>
-        <nav > 
+      <header className={`navbar ${hideNav ? 'hide' : ''}`}>
+      <nav >
             <img src={logo} alt="logo" />
           <ul className={bigMenu?"bigMenu":undefined}>
   
 
             <li>
-              <NavLink  to="/home" >الصفحة الرئيسية</NavLink>
+            <NavLink exact to="/" >الصفحة الرئيسية</NavLink>
             </li>
             
             <li>

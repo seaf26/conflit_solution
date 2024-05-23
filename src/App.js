@@ -10,6 +10,7 @@ import LibarayComp from './Routes/LibarayComp'
 import PeopleComp from './Routes/PeopleComp'
 import MediaComp from './Routes/MediaComp'
 import Loading from './Components/Loading/Loading'
+import ScrollTop from './Components/ScrollTop/ScrollTop'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <Fragment>
+      <ScrollTop />
       {
         loading ? <Loading /> :
         <Routes>

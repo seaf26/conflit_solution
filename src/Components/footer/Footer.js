@@ -54,7 +54,6 @@ const Footer = () => {
           <p>© جميع حقوق محفوظة لشركة حلول النزاع</p>
           </div>
           <div className={styles.bigcontent}>
-            
           <div className={styles.content}>
           <div className={styles.info}>
              <div className={styles.mail}>
@@ -73,6 +72,9 @@ const Footer = () => {
               <MdOutlinePhoneInTalk className={styles.icon}  color="#e6b16b" />
             </Link>
           </div>
+          <Link id={styles.dis} to={"https://www.facebook.com"} target="_blank">
+            <p>@CSLF-SA</p>
+          </Link>
         </div>
         <div className={styles.icons}>
         {
@@ -81,8 +83,8 @@ const Footer = () => {
             <Link to={link.link} key={index} target="_blank">
               <p>{link.icon}</p>
             </Link>
-            <Link to={link.specialLink} target="_blank">
-            <p>{link.pragraph}</p>
+            <Link id={styles.Cslf} to={link.specialLink} target="_blank">
+            <p >{link.pragraph}</p>
           </Link>
           </div>
           ))
@@ -92,7 +94,7 @@ const Footer = () => {
         <div className={styles.logoo}>
           <img src={footerlog} alt="footerlogo" />
           </div>
-          </div>
+        </div>
         </footer>
     </Fragment>
   )

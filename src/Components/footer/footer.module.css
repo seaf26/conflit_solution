@@ -14,6 +14,9 @@
     color: #e6b16b;
     padding: 20px;
     margin-top: 50px;
+    a{
+        text-decoration: none;
+    }
     .logo{
         display: flex;
         flex-direction: column;
@@ -94,14 +97,18 @@
                     color: #014209;
                 }
             }
+            
         }
+        #dis{
+            display: none;
+        }   
     
     }
     .icons{
         display: flex!important;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: center;    
         gap: 20px;
         
       
@@ -147,6 +154,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             gap: 20px;
         }
         .info{
@@ -188,7 +196,20 @@
                 a{
                     text-decoration: none;
                 }
+              
             }
+            #dis{
+                display: block;
+                font-size: 24px;
+                font-weight: 500;
+                color: #e6b16b ;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: #014209;
+                }
+
+            }
+
         
         }
         .icons{
@@ -222,17 +243,21 @@
                 text-decoration: none;
                 color: #e6b16b ;
             }
+            #Cslf{
+                display: none;
+            
+            }
         }
     }
     .logoo{
         display: none;
     }
 }
-@media screen and (max-width:451px) {
+@media screen and (max-width:456px) {
     .Bigfooter{
         .icons{
             display: flex!important;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 20px;
@@ -253,7 +278,7 @@
             p{
                 font-weight: 500;
                 color: #e6b16b ;
-                transition: all 0
+                transition: all 0;
     
     }
             a{
@@ -279,6 +304,12 @@
                 object-fit: contain;
 
             }
+        }
+        .icons{
+           svg{
+                font-size: 40px;
+           }
+
         }
     }
 }
