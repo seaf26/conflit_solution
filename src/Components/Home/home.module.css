@@ -77,7 +77,8 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    color: #114323;
+    color: #114323;  
+    width: 100%;  
     h1{
       font-size: 40px;
       font-weight: bolder;
@@ -87,15 +88,17 @@ body{
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      width: 100%;  
       margin-top: 50px;
       gap: 40px;
+      width: 97%;  
+
       .content{
+
       position: relative;
-      width: 80%;
       width: 370px;
       height: 200px;
       min-width: 300px;
+      text-align: center;
       border: 1px solid #114323;
       border-radius: 20px;
       box-shadow: 10px 10px 10px -5px #114323; 
@@ -217,6 +220,30 @@ body{
           max-width: 400px; 
         }
       }
+    }
+    .Service_companySenior{
+
+      .Service_companyJunior{
+        .content{
+          width: 290px;
+          height: 180px;
+          .title{
+            .icon{
+              font-size: 35px;
+            }
+            p{
+              font-size: 20px;
+            }
+          }
+          .Paragraph{
+            p{
+              font-size: 15px;
+            }
+          }
+
+        }
+      }
+        
     }
   }
   

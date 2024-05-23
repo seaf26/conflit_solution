@@ -20,7 +20,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      width: 80%;  
+      width: 94%;  
       margin-top: 50px;
       gap: 40px;
       .lastDiv{
@@ -97,7 +97,7 @@
     }
   }
 
-  @media screen and (max-width: 1488px) {
+  @media screen and (max-width: 1270px) {
     .Service_companySenior{
       .Service_companyJunior{
    
@@ -109,4 +109,30 @@
       }
     }
     
+  }
+
+  @media screen and (max-width: 415px){
+    .Service_companySenior{
+      .Service_companyJunior{
+        .content{
+          width: 290px;
+          height: 180px;
+          .title{
+            .icon{
+              font-size: 35px;
+            }
+            p{
+              font-size: 20px;
+            }
+          }
+          .Paragraph{
+            p{
+              font-size: 15px;
+            }
+          }
+
+        }
+      }
+        
+    }
   }

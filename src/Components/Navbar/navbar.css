@@ -35,12 +35,17 @@ header{
             list-style: none;
             li a{
                 text-decoration: none;
-                padding: 7px;
+                padding: 4px;
                 display: flex;
                 align-items: center;
                 width: max-content;
                 color: #114323;
                 font-size: 19px;
+                &:hover{
+                    background-color:#e6b16b !important;
+                    color: rgb(255, 255, 255) !important;
+                    padding: 15px !important;
+                    border-radius: 5px !important;                }
                 
 
             }
@@ -109,4 +114,40 @@ header{
         }
        
     }
+}
+
+@media screen and (max-height: 750px){
+    header{
+        nav{
+            .bigMenu{
+                a{
+                    font-size: 16px;
+           
+                }
+                
+            }
+            
+            
+        }
+    }
+
+    
+}
+
+@media screen and (max-height: 700px){
+    header{
+        nav{
+            .bigMenu{
+                a{
+                    font-size: 14px;
+           
+                }
+                
+            }
+            
+            
+        }
+    }
+
+    
 }
