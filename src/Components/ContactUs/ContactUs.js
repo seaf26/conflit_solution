@@ -42,7 +42,7 @@ const ContactUs = () => {
       link: "https://www.twitter.com",
       },
     ]);
-    setEmail("mailto:seafmohamedgamel@gmail.com");
+    setEmail("mailto:info@cslf.sa");
     setPhone("tel:+00966540943256");
   }, []);
 
@@ -56,7 +56,7 @@ const ContactUs = () => {
         <div className={styles.info}>
           <div className={styles.mail}>
             <Link to={Email}>
-              <p>seaf@gmail.com</p>
+            <p>info@cslf.sa</p>
             </Link>
             <Link to={Email}>
               <IoMailOpenOutline  color="#e6b16b" className={styles.icon} />
@@ -64,7 +64,7 @@ const ContactUs = () => {
           </div>
           <div className={styles.tel}>
           <Link to={Phone} className={styles.link}>
-              <p>01000000000</p>
+          <p>920035730</p>
             </Link>
             <Link to={Phone} className={styles.link}>
               <MdOutlinePhoneInTalk className={styles.icon}  color="#e6b16b" />

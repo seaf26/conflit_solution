@@ -85,12 +85,18 @@
             .p{
                 font-size: 1.7rem;
                 width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             .icon{
                 color: #e6b16b;
                 font-size: 2rem;
-                
                 margin-left: 1rem;
+                transition: 0.5s ease all;
+                &:hover{
+                    color: #114323;
+                }
             }
         }
         
