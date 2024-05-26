@@ -26,7 +26,17 @@
             font-size: 20px;
             font-weight: 700;
             color: #e6b16b;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: #014209;
+            }
         
+        }
+        img{
+            width: 300px;
+            height: 150px;
+            object-fit: contain;
         }
     }
     .bigcontent{

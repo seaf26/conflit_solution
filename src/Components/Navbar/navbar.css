@@ -27,6 +27,11 @@ header{
         justify-content: space-between;
         align-items: center;
         color: white;
+        img{
+            width: 250px;
+            height: 100px;
+
+        }
         ul{
             display: flex;
             justify-content: center;

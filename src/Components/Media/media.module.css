@@ -13,6 +13,7 @@
     gap: 50px;
     .mediaHeader{
         margin-top: 50px;
+        cursor: pointer;
     }
     
 }

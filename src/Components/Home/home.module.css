@@ -50,11 +50,13 @@ body{
     margin-top: 50px;
     
     p{
+      cursor: pointer;
       font-size: 50px;
       color: #e6b16b;
-
+      
     }
     svg{
+      cursor: pointer;
       font-size: 80px;
       color: #114323;
     }
@@ -82,6 +84,7 @@ body{
     h1{
       font-size: 40px;
       font-weight: bolder;
+      cursor: pointer;
     }
     .Service_companyJunior{
       display: flex;

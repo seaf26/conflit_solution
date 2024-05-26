@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import './navbar.css';
 import { NavLink } from "react-router-dom";
 // import { CiSearch } from "react-icons/ci";
-import logo from '../Imgaes/Screenshot_2024-05-05_013301-removebg-preview.png'
+import logo from '../Imgaes/full color.png'
 import { IoMenu } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -41,7 +41,7 @@ const NavBar = () => {
   
 
             <li>
-            <NavLink exact to="/" >الصفحة الرئيسية</NavLink>
+            <NavLink exact="true" to="/" >الصفحة الرئيسية</NavLink>
             </li>
             
             <li>
