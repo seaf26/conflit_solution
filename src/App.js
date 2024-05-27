@@ -20,6 +20,9 @@ const App = () => {
   useEffect(() => {
     setLoading(false)
   },[])
+  // setTimeout(() => {
+  //   setLoading(false)
+  // },3000)
   AOS.init({
     duration : 700,
     once: true

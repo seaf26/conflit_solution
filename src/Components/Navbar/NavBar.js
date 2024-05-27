@@ -30,6 +30,11 @@ const NavBar = () => {
 
   const menuChange = () => {
     setBigMenu(!bigMenu);
+    if (!bigMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   };
 
   return (
@@ -41,7 +46,7 @@ const NavBar = () => {
   
 
             <li>
-            <NavLink exact="true" to="/" >الصفحة الرئيسية</NavLink>
+            <NavLink className={window.location.pathname === "/" ? "active" : undefined}  to="/" >الصفحة الرئيسية</NavLink>
             </li>
             
             <li>

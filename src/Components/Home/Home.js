@@ -30,8 +30,7 @@ const Home = () => {
         title: " تسجيل العلامة التجارية",
         icon: <BiNotepad className={styles.icon} />,
         Paragraph: " اجراءات تسجيل وحماية العلامة التجارية",
-        button:<Link className="link" to="/services">اقرا المزيد</Link>
-
+        button: true,
       },
     ]);
 
@@ -47,20 +46,25 @@ const Home = () => {
         </div>
       </div>
 
-      <div  className={styles.media}></div>
+      <div className={styles.media}></div>
       <Media />
-      <div  className={styles.num}>
+      <div className={styles.num}>
         <div className={styles.numbers}>
-          <ImHammer2 data-aos="fade-left"/>
+          <ImHammer2 data-aos="fade-left" />
           <p data-aos="fade-right"> +600</p>
         </div>
-        <p data-aos="fade-left" id={styles.case}>قضية</p>
+        <p data-aos="fade-left" id={styles.case}>
+          قضية
+        </p>
       </div>
 
       <div className={styles.Service_companySenior}>
-            <h1 data-aos="fade-up">خدمات الشركات</h1>
-        <div data-aos="fade-left"   data-aos-duration="700" className={styles.Service_companyJunior}>
-        
+        <h1 data-aos="fade-up">خدمات الشركات</h1>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="700"
+          className={styles.Service_companyJunior}
+        >
           {Servivce_content.map((item, index) => {
             return (
               <div key={index} className={styles.content}>
@@ -71,15 +75,13 @@ const Home = () => {
                 <div className={styles.Paragraph}>
                   <p>{item.Paragraph}</p>
                 </div>
-                {
-                  item.button &&(
-                    <div className={styles.bttn}>
-                      <Link to={"services"}>{item.button} </Link>  
-                    </div>
-                  
-                  )
-                }
-
+                {item.button && (
+                  <div className={styles.bttn}>
+                    <Link className="link" to="/services">
+                      اقرا المزيد
+                    </Link>{" "}
+                  </div>
+                )}
               </div>
             );
           })}
