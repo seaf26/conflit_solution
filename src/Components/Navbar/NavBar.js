@@ -30,16 +30,19 @@ const NavBar = () => {
 
   const menuChange = () => {
     setBigMenu(!bigMenu);
-    if (!bigMenu) {
+  };
+
+  useEffect(() => {
+    if (bigMenu) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-  };
+  }, [bigMenu]);
 
   return (
     <Fragment>
-      <header className={`navbar ${hideNav ? 'hide' : ''}`}>
+      <header className={`header ${hideNav ? 'hide' : ''}`}>
       <nav >
             <img src={logo} alt="logo" />
           <ul className={bigMenu?"bigMenu":undefined}>

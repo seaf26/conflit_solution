@@ -95,13 +95,13 @@ header{
     padding: 15px !important;
     border-radius: 5px !important;
 }
-.navbar {
+.header {
     position: fixed;
   
     transition: top 0.5s;
   }
   
-  .navbar.hide {
+  .header.hide {
     top: -176px; 
   }
 @media screen and (max-width: 1510px){
