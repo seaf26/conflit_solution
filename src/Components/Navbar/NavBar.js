@@ -30,12 +30,14 @@ const NavBar = () => {
 
   const menuChange = () => {
     setBigMenu(!bigMenu);
+  }
+  useEffect(()=>{
     if (!bigMenu) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-  };
+  });
 
   return (
     <Fragment>
