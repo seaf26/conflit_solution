@@ -33,11 +33,11 @@ const NavBar = () => {
   }
   useEffect(()=>{
     if (!bigMenu) {
-      document.body.style.overflow = 'hidden';
-    } else {
       document.body.style.overflow = 'auto';
+    } else {
+      document.body.style.overflow = 'hidden';
     }
-  });
+  },[bigMenu]);
 
   return (
     <Fragment>

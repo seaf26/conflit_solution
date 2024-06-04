@@ -8,7 +8,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 176px;
+    height: 24vh;
     background-color: #f8f9fa;
     position: fixed;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ header{
         }
         .bigMenu{
             width: 100%;
-            height: calc(100vh - 176px);
+            height: calc(100vh - 24vh);
             min-height: 677px;
             display: flex !important;
             flex-direction: column;
@@ -66,7 +66,7 @@ header{
             background-color:#114323;
             color: rgb(255, 255, 255);
             position: fixed;
-            top: 177px;
+            top: 24vh;
             left: 0;
 
             a{
