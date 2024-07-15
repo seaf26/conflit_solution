@@ -13,6 +13,8 @@ import Loading from "./Components/Loading/Loading";
 import ScrollTop from "./Components/ScrollTop/ScrollTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageSwitcher from "./Components/LanguageSwitcher/LanguageSwitcher";
+
 // import './App.css'
 // import { useContext } from 'react'
 // import { DarkModeContext } from './Components/Dark/DarkModeContext'
@@ -37,7 +39,6 @@ const App = () => {
     <Fragment>
       {/* <div className={darkMode ? 'dark-mode' : ''}> */}
       {/* <DarkModeProvider> */}
-
       <ScrollTop />
       {loading ? (
         <Loading />

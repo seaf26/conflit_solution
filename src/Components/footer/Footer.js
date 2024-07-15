@@ -18,32 +18,32 @@ const Footer = () => {
   useEffect(() => {
     setSocialLinks([
       {
-        specialLink: "https://www.facebook.com",
-        pragraph: "@CSLF-SA",
+      specialLink: "https://www.facebook.com",
+      pragraph: "@CSLF-SA",
       },
       {
-        icon: <FaSnapchatGhost />,
-        link: "https://www.snapchat.com",
+      icon: <FaSnapchatGhost />,
+      link: "https://www.snapchat.com",
       },
       {
-        icon: <FaTiktok />,
-        link: "https://www.tiktok.com",
+      icon: <FaTiktok />,
+      link: "https://www.tiktok.com/@cslf_sa?_t=8nxex39S1OZ&_r=1",
       },
       {
-        icon: <FaLinkedinIn />,
-        link: "https://www.linkedin.com",
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com",
       },
       {
-        icon: <FaInstagram />,
-        link: "https://www.instagram.com",
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/cslf_sa?igsh=OGQ5ZDc2ODk2ZA==",
       },
       {
-        icon: <FaXTwitter />,
-        link: "https://www.twitter.com",
+      icon: <FaXTwitter />,
+      link: "https://x.com/cslf_sa?s=21&t=Kwa2BgNyZS5HmfO9Wr11bQ",
       },
     ]);
-    setEmail("mailto:info@cslf.sa");
-    setPhone("tel:+00966540943256");
+    setEmail("mailto:seafmohamedgamel@gmail.com");
+    setPhone("tel:+966555690882");
   }, []);
   return (
     <Fragment>

@@ -27,7 +27,7 @@ const ContactUs = () => {
       },
       {
       icon: <FaTiktok />,
-      link: "https://www.tiktok.com",
+      link: "https://www.tiktok.com/@cslf_sa?_t=8nxex39S1OZ&_r=1",
       },
       {
       icon: <FaLinkedinIn />,
@@ -35,15 +35,15 @@ const ContactUs = () => {
       },
       {
       icon: <FaInstagram />,
-      link: "https://www.instagram.com",
+      link: "https://www.instagram.com/cslf_sa?igsh=OGQ5ZDc2ODk2ZA==",
       },
       {
       icon: <FaXTwitter />,
-      link: "https://www.twitter.com",
+      link: "https://x.com/cslf_sa?s=21&t=Kwa2BgNyZS5HmfO9Wr11bQ",
       },
     ]);
-    setEmail("mailto:info@cslf.sa");
-    setPhone("tel:+00966540943256");
+    setEmail("mailto:seafmohamedgamel@gmail.com");
+    setPhone("tel:+966555690882");
   }, []);
 
 

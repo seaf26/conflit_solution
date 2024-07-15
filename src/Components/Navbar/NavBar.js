@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import logo from '../Imgaes/full color.png'
 import { IoMenu } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
-
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 const NavBar = () => {
   const [bigMenu, setBigMenu] = useState(false);
   const [hideNav, setHideNav] = useState(false);
@@ -67,9 +67,9 @@ const NavBar = () => {
             <li>
               <NavLink to="/sucsses">شركاء النجاح</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/liabrary">المكتبة الرقمية</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/mediaCentre">المركز الاعلامي</NavLink>
             </li>
@@ -77,7 +77,9 @@ const NavBar = () => {
               <NavLink to="/contact">اتصل بنا</NavLink>
             </li>
           </ul>
+        {/* <LanguageSwitcher/> */}
         </nav>
+
         { (
           bigMenu ? (
             <AiOutlineClose onClick={menuChange} size={30} />
