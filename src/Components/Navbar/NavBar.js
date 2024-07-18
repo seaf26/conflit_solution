@@ -77,7 +77,7 @@ const NavBar = () => {
               <NavLink to="/contact">اتصل بنا</NavLink>
             </li>
           </ul>
-        {/* <LanguageSwitcher/> */}
+        <LanguageSwitcher/>
         </nav>
 
         { (

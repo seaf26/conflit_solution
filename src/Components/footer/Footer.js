@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
               <div className={styles.tel}>
                 <Link to={Phone} className={styles.link}>
-                  <p>920035730</p>
+                  <p>+966555690882</p>
                 </Link>
                 <Link to={Phone} className={styles.link}>
                   <MdOutlinePhoneInTalk
