@@ -9,7 +9,7 @@ body {
   font-family: "Cairo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  direction: rtl;
+   direction: rtl; /* comment it if you enable the switcher*/
 }
 
 

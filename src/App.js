@@ -22,23 +22,27 @@ import LanguageSwitcher from "./Components/LanguageSwitcher/LanguageSwitcher";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  // const { darkMode } = useContext(DarkModeContext);
+  const [language, setLanguage] = useState("ar");
+
+  useEffect(() => {
+    localStorage.getItem("language", language);
+  }
+  , [language]);
+  console.log(language);
+
 
   useEffect(() => {
     setLoading(false);
   }, []);
-  // setTimeout(() => {
-  //   setLoading(false)
-  // },3000)
+
   AOS.init({
     duration: 700,
     once: true,
   });
 
   return (
-    <Fragment>
-      {/* <div className={darkMode ? 'dark-mode' : ''}> */}
-      {/* <DarkModeProvider> */}
+    // style={{direction: setLanguage ? "ltr" : "rtl"}}
+    <div  >
       <ScrollTop />
       {loading ? (
         <Loading />
@@ -59,7 +63,7 @@ const App = () => {
 
       {/* </DarkModeProvider> */}
       {/* </div> */}
-    </Fragment>
+    </div>
   );
 };
 

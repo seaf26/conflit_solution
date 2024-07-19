@@ -2,12 +2,14 @@
   "name": "conflit_solution",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cslf.sa",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "cross-env": "^7.0.3",
     "i18next": "^23.12.1",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.5.2",
@@ -21,10 +23,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "ESLINT_NO_DEV_ERRORS=true react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
