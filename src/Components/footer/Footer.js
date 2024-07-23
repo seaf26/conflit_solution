@@ -20,7 +20,7 @@ const Footer = () => {
   useEffect(() => {
     setSocialLinks([
       {
-      specialLink: "https://www.facebook.com",
+      specialLink: "/contact",
       pragraph: "@CSLF-SA",
       },
       {
@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
               <Link
                 id={styles.dis}
-                to={"https://www.facebook.com"}
+                to={"/contact"}
                 target="_blank"
               >
                 <p>@CSLF-SA</p>
