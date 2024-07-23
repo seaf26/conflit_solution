@@ -15,6 +15,8 @@ const Footer = () => {
   const [socialLinks, setSocialLinks] = useState([]);
   const [Email, setEmail] = useState("");
   const [Phone, setPhone] = useState("");
+  const [Phone2, setPhone2] = useState("");
+
   useEffect(() => {
     setSocialLinks([
       {
@@ -42,8 +44,9 @@ const Footer = () => {
       link: "https://x.com/cslf_sa?s=21&t=Kwa2BgNyZS5HmfO9Wr11bQ",
       },
     ]);
-    setEmail("mailto:seafmohamedgamel@gmail.com");
+    setEmail("mailto:info@cslf.sa");
     setPhone("tel:+966555690882");
+    setPhone2("tel:+966920035730");
   }, []);
   return (
     <Fragment>
@@ -65,8 +68,12 @@ const Footer = () => {
               </div>
               <div className={styles.tel}>
                 <Link to={Phone} className={styles.link}>
-                  <p>+966555690882</p>
+                  <p>اتصل بنا هنا</p>
                 </Link>
+                <Link to={Phone2} className={styles.link}>
+                <p>او هنا</p>
+                </Link>
+
                 <Link to={Phone} className={styles.link}>
                   <MdOutlinePhoneInTalk
                     className={styles.icon}
