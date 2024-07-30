@@ -11,14 +11,14 @@ import { BiNotepad } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import man from "../Imgaes/human.png";
 import woman from "../Imgaes/woamn.png";
-import { useTranslation } from "react-i18next"; // Step 2: Import useTranslation
+import { useTranslation } from "react-i18next"; 
 
 const Home = () => {
   const [Title, setTitle] = useState("");
   const [Paragraph, setParagraph] = useState("");
   const [Servivce_content, setService_Content] = useState([]);
   const [PersonServices, setPersonServices] = useState([]);
-  const { t } = useTranslation(); // Step 3: Use useTranslation hook
+  const { t } = useTranslation(); 
 
   useEffect(() => {
     setService_Content([

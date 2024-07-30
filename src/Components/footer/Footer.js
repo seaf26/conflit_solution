@@ -53,7 +53,7 @@ const Footer = () => {
       <footer className={styles.Bigfooter}>
         <div className={styles.logo}>
           <img src={footerlogo} alt="footerlogo" />
-          <p>© جميع حقوق محفوظة لشركة حلول النزاع</p>
+          <p>© جميع الحقوق محفوظة لشركة حلول النزاع</p>
         </div>
         <div className={styles.bigcontent}>
           <div className={styles.content}>

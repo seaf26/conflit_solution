@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomeComp from "./Routes/HomeComp";
 import CallComp from "./Routes/CallComp";
@@ -11,9 +11,10 @@ import PeopleComp from "./Routes/PeopleComp";
 import MediaComp from "./Routes/MediaComp";
 import Loading from "./Components/Loading/Loading";
 import ScrollTop from "./Components/ScrollTop/ScrollTop";
+import NotFound from './Components/NotFound/NotFound'; 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LanguageSwitcher from "./Components/LanguageSwitcher/LanguageSwitcher";
+// import './Components/i18n/i18n';
 
 // import './App.css'
 // import { useContext } from 'react'
@@ -22,13 +23,13 @@ import LanguageSwitcher from "./Components/LanguageSwitcher/LanguageSwitcher";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [language, setLanguage] = useState("ar");
+  // const [language, setLanguage] = useState("ar");
 
-  useEffect(() => {
-    localStorage.getItem("language", language);
-  }
-  , [language]);
-  console.log(language);
+  // useEffect(() => {
+  //   localStorage.getItem("language", language);
+  // }
+  // , [language]);
+  // console.log(language);
 
 
   useEffect(() => {
@@ -58,6 +59,7 @@ const App = () => {
           <Route path="/liabrary" element={<LibarayComp />} />
           <Route path="/people" element={<PeopleComp />} />
           <Route path="/mediaCentre" element={<MediaComp />} />
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
       )}
 
