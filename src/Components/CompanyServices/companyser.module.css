@@ -8,12 +8,13 @@
     flex-direction: column !important;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     color: #114323;
     width: 100%;
     h1{
       font-size: 40px;
       font-weight: bolder;
+      margin-top: 50px;
+
     }
     .Service_companyJunior{
       display: flex;
