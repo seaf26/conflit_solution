@@ -1,79 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.Service_companySenior{
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: center;
-    color: #114323;
-    width: 100%;
-    h1{
-      font-size: 40px;
-      font-weight: bolder;
-      margin-top: 50px;
-    }
-    .Service_companyJunior{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      width: 90%;  
-      margin-top: 50px;
-      gap: 40px;
-    .content{
-      cursor: pointer;
-      width: 340px;
-      min-width: 300px;
-      max-width: 600px;
-      height: 320px;
-      background-color: #114323 ;
-      border: 1px solid #114323;
-      border-radius: 20px;
-      box-shadow: 10px 10px 10px -5px #114323;  
-      color: #e6b16b;
-      transition: 0.5s;
-      &:hover{
-        box-shadow: 10px 10px 10px -5px #e6b16b;
-        border: #e6b16b;
-        background-color: #e6b16b;
-        color: #114323;
-      }
-      .title{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        gap: 10px;
-        padding: 0 10px;
-        padding-top: 1vh;
-        .icon{
-          font-size: 40px;
-          min-width: 40px;
-        }
-        p{
-          display: flex;
-          font-size: 22px;
-          font-weight: bolder;
-          
-        }
-        
-      }
-      .Paragraph{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        text-align: center;
-        p{
-          font-size: 16px;
-          margin-top: 1vh;
-          padding: 0 10px;
-        }
-      }
-    }
-    }
-  }
+
+.Service_companySenior {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  color: #114323;
+  width: 100%;
+}
+
+.Service_companySenior h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.Service_companyJunior {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;  
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.Service_companyJunior .content {
+  cursor: pointer;
+  width: 340px;
+  min-width: 300px;
+  max-width: 600px;
+  height: 320px;
+  background-color: #114323;
+  border: 1px solid #114323;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px -5px #114323;  
+  color: #e6b16b;
+  transition: 0.5s;
+}
+
+.Service_companyJunior .content:hover {
+  box-shadow: 10px 10px 10px -5px #e6b16b;
+  border: 1px solid #e6b16b;
+  background-color: #e6b16b;
+  color: #114323;
+}
+
+.Service_companyJunior .content .title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  gap: 10px;
+  padding: 0 10px;
+  padding-top: 1vh;
+}
+
+.Service_companyJunior .content .title .icon {
+  font-size: 40px;
+  min-width: 40px;
+}
+
+.Service_companyJunior .content .title p {
+  display: flex;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.Service_companyJunior .content .Paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.Service_companyJunior .content .Paragraph p {
+  font-size: 16px;
+  margin-top: 1vh;
+  padding: 0 10px;
+}

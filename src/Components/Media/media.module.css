@@ -1,91 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main{
-    
-   display: flex;
+.main {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    .mediaHeader{
-        margin-top: 50px;
-        cursor: pointer;
-    }
-    
 }
-.media{
+
+.main .mediaHeader {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.media {
     display: flex;
     flex-wrap: wrap;
     min-width: fit-content;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    
-    .mediaImage{
-        background-color: #114323;
-        border: none;
-        border-radius: 10px;
-        width: 450px;  
-        height: 350px;      
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: 0.5s;
-        &:hover {
-           scale: 1.1;
-        }
-        img{
-            background-color: #ffffff;
-            width: fit-content;
-            height: 250px;
-            object-fit: cover;
-        }
-       
-
-    }
 }
-#special{
+
+.media .mediaImage {
+    background-color: #114323;
+    border: none;
+    border-radius: 10px;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.media .mediaImage:hover {
+    scale: 1.1;
+}
+
+.media .mediaImage img {
+    background-color: #ffffff;
+    width: fit-content;
+    height: 250px;
+    object-fit: cover;
+}
+
+#special {
     width: 400px;
     height: 200px;
     object-fit: contain;
-}   
-@media screen and (max-width: 480px){
-    .media{
+}
+
+@media screen and (max-width: 480px) {
+    .media {
         flex-direction: column;
         gap: 40px;
-        .mediaImage{
-            width: 400px;
-            height: 300px;
-            img{
-                height: 250px;
-            }
-        }
     }
-    #special{
+
+    .media .mediaImage {
+        width: 400px;
+        height: 300px;
+    }
+
+    .media .mediaImage img {
+        height: 250px;
+    }
+
+    #special {
         width: 380px;
         height: 150px;
         object-fit: contain;
-    }   
-}
-@media screen and (max-width: 433px){
-    .media{
-        .mediaImage{
-            width: 300px;
-            height: 200px;
-            img{
-                height: 180px;
-                width:  260px;
-            }
-        }
     }
-    #special{
+}
+
+@media screen and (max-width: 433px) {
+    .media .mediaImage {
+        width: 300px;
+        height: 200px;
+    }
+
+    .media .mediaImage img {
+        height: 180px;
+        width: 260px;
+    }
+
+    #special {
         width: 270px;
         height: 150px;
         object-fit: contain;
-    }  
+    }
 }

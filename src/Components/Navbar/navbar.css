@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
   width: 100%;
   display: flex;
@@ -16,171 +17,161 @@ header {
   top: 0;
   font-weight: bold;
   transition: all 0.3s;
-  svg {
-    cursor: pointer;
-  }
+}
 
-  nav {
-    width: 98%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;/*it was space between before hide the libarary*/
-    align-items: center;
-    color: white;
-    img {
-      width: 250px;
-      height: 100px;
-    }
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      list-style: none;
-      li a {
-        text-decoration: none;
-        padding: 4px;
-        display: flex;
-        align-items: center;
-        width: max-content;
-        color: #114323;
-        font-size: 19px;
-        &:hover {
-          background-color: #e6b16b !important;
-          color: rgb(255, 255, 255) !important;
-          padding: 15px !important;
-          border-radius: 5px !important;
-        }
-      }
-    }
-    .bigMenu {
-      width: 100%;
-      height: calc(100vh - 24vh);
-      min-height: 677px;
-      display: flex !important;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #114323;
-      color: rgb(255, 255, 255);
-      position: fixed;
-      top: 24vh;
-      left: 0;
+header svg {
+  cursor: pointer;
+}
 
-      a {
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        padding: 9px;
-        text-decoration: none;
-      }
-    }
-  }
-  .search {
-    color: #114323;
-  }
+header nav {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+header nav img {
+  width: 250px;
+  height: 100px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  color: #114323;
+  font-size: 19px;
+  transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #e6b16b !important;
+  color: rgb(255, 255, 255) !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+}
+
+header nav .bigMenu {
+  width: 100%;
+  height: calc(100vh - 24vh);
+  min-height: 677px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #114323;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 24vh;
+  left: 0;
+}
+
+header nav .bigMenu a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 9px;
+  text-decoration: none;
+}
+
+header .search {
+  color: #114323;
 }
 
 .menu {
   display: none;
 }
+
 .active {
   background-color: #e6b16b !important;
   color: rgb(255, 255, 255) !important;
   padding: 15px !important;
   border-radius: 5px !important;
 }
+
 .header {
   position: fixed;
-
   transition: top 0.5s;
 }
 
 .header.hide {
   top: -176px;
 }
-@media screen and (max-width: 1370px) { /*it was 1510px before hiding the libaray*/
-  header {
-    nav {
-      width: 93%;
-      justify-content: space-between;
-      ul {
-        display: none;
-      }
-    }
+
+@media screen and (max-width: 1370px) {
+  header nav {
+    width: 93%;
+    justify-content: space-between;
   }
+
+  header nav ul {
+    display: none;
+  }
+
   .menu {
     display: block;
     color: #114323;
     transition: all 0.3s;
-    svg {
-      font-size: 30px;
-      cursor: pointer;
-    }
-    &:hover {
-      color: #e6b16b;
-    }
+  }
+
+  .menu svg {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .menu:hover {
+    color: #e6b16b;
   }
 }
 
 @media screen and (max-height: 810px) {
-  header {
-    nav {
-      .bigMenu {
-        a {
-          font-size: 16px;
-        }
-      }
-    }
+  header nav .bigMenu a {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-height: 745px) {
-  header {
-    nav {
-      .bigMenu {
-        padding-top: 20px;
-        justify-content: start;
-        a {
-          font-size: 15px;
-        }
-      }
-    }
+  header nav .bigMenu {
+    padding-top: 20px;
+    justify-content: start;
+  }
+
+  header nav .bigMenu a {
+    font-size: 15px;
   }
 }
 
 @media screen and (max-height: 700px) {
-  header {
-    nav {
-      .bigMenu {
-        a {
-          font-size: 14px;
-        }
-      }
-    }
+  header nav .bigMenu a {
+    font-size: 14px;
   }
 }
-@media screen and (max-height: 670px) {
-  header {
-    nav {
-      .bigMenu {
-        height: calc(100vh - 176px);
-        padding-top: 10px;
-        justify-content: start;
 
-        a {
-          font-size: 12px;
-        }
-      }
-    }
+@media screen and (max-height: 670px) {
+  header nav .bigMenu {
+    height: calc(100vh - 176px);
+    padding-top: 10px;
+    justify-content: start;
+  }
+
+  header nav .bigMenu a {
+    font-size: 12px;
   }
 }
 
 @media screen and (max-height: 601px) {
-  header {
-    nav {
-      .bigMenu {
-        gap: 0;
-      }
-    }
+  header nav .bigMenu {
+    gap: 0;
   }
 }

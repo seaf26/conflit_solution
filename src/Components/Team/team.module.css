@@ -10,74 +10,85 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  .mainHeader {
-    cursor: pointer;
-    font-weight: 700;
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    color: #114323;
-    p {
-      font-size: 40px;
-      font-weight: bolder;
-      margin-top: 50px;
-    }
-  }
-  .ceo {
-    display: flex;
-    margin-top: 4vh;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    gap: 5px;
-    p {
-      font-size: 30px;
-      font-weight: bolder;
-    }
-    #special {
-      font-size: 20px;
-    }
-    .ceoImage {
-      border-radius: 110px 110px 110px 110px / 78px 78px 78px 78px;
-      border: 1px solid #114323;
-      padding: 10px;
-      height: 250px;
-    }
-  }
-  .team {
-    cursor: pointer;
-    margin-top: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    gap: 110px;
-    .teamMember {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      p {
-        font-size: 30px;
-        font-weight: bolder;
-      }
-      #special {
-        font-size: 20px;
-      }
-      .teamMemberImage {
-        display: flex;
-        flex-direction: column;
-        border-radius: 110px 110px 110px 110px / 78px 78px 78px 78px;
-        border: 1px solid #114323;
-        padding: 10px;
-        height: 250px;
-        text-align: center;
-      }
-    }
-  }
+}
+
+.main .mainHeader {
+  cursor: pointer;
+  font-weight: 700;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  color: #114323;
+}
+
+.main .mainHeader p {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.main .ceo {
+  display: flex;
+  margin-top: 4vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.main .ceo p {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.main .ceo #special {
+  font-size: 20px;
+}
+
+.main .ceo .ceoImage {
+  border-radius: 110px 110px 110px 110px / 78px 78px 78px 78px;
+  border: 1px solid #114323;
+  padding: 10px;
+  height: 250px;
+}
+
+.main .team {
+  cursor: pointer;
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 110px;
+}
+
+.main .team .teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .team .teamMember p {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.main .team .teamMember #special {
+  font-size: 20px;
+}
+
+.main .team .teamMember .teamMemberImage {
+  display: flex;
+  flex-direction: column;
+  border-radius: 110px 110px 110px 110px / 78px 78px 78px 78px;
+  border: 1px solid #114323;
+  padding: 10px;
+  height: 250px;
+  text-align: center;
 }
