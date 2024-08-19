@@ -36,10 +36,10 @@ const App = () => {
     setLoading(false);
   }, []);
 
-  AOS.init({
-    duration: 700,
-    once: true,
-  });
+  // AOS.init({
+  //   duration: 700,
+  //   once: true,
+  // });
 
   return (
     // style={{direction: setLanguage ? "ltr" : "rtl"}}
